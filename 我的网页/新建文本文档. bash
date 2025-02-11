@@ -1,0 +1,8 @@
+# 进入 HTML 文件所在目录
+   cd /path/to/your/html
+   # 启动服务器（默认端口 8000）
+   python3 -m http.server
+# 进入 HTML 文件所在目录
+   cd /path/to/your/html
+   # 启动服务器（默认端口 8000）
+   python3 -m http.server

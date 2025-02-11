@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <title>哈哈哈，唐子钧创建的网页</title>
+         <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用户登录跳转</title>
+<script>
+function handleSubmit(event) {
+    event.preventDefault(); // 阻止表单默认提交
+    var username = document.getElementById("username").value;
+    // 根据用户名设置跳转页面，这里仅为示例，实际中可能需要更复杂的逻辑
+    if (username === "唐子钧") {
+        window.location.href = "唐子钧.html"; // 跳转到唐子钧页面
+    } else if (username === "user1") {
+        window.location.href = "user1_page.html"; // 跳转到用户1页面
+    } else {
+        alert("用户名不存在，请重新输入！");
+    }
+}
+</script>
+     </head>
+     <body>
+         <h1>这是我通过AI学习创建的网站，有一些话想要对你们说，这很有意义!只可以输一次，请输自己的名字!</h1>
+         <form onsubmit="handleSubmit(event)">
+    <label for="username">用户名:</label>
+    <input type="text" id="username" name="username" required>
+    <input type="submit" value="提交">
+        </form>
+     </body>
+     </html>
